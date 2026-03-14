@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
+
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -27,10 +29,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="tp-script"
+          strategy="afterInteractive"
+          src="https://tpembars.com/NTA3ODI0.js?t=507824"
+        />
+        </head>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
+      
     </html>
   )
 }
