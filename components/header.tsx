@@ -39,13 +39,13 @@ export function Header() {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
               <span className="sr-only">Search</span>
             </Button>
             <Button>Sign In</Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <Button

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FlightSearch } from "@/components/flight-search";
+import { FlightWidget } from "@/components/flight-widget";
 import { RouteCard } from "@/components/route-card";
 import { DealCard } from "@/components/deal-card";
 import { popularRoutes, travelDeals } from "@/lib/mock-data";
@@ -16,7 +17,7 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[600px] flex items-center">
+        <section className="relative min-h-[200px] flex items-center">
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
@@ -43,10 +44,16 @@ export default function HomePage() {
               </div>
 
               {/* Flight Search */}
-              <FlightSearch />
+              {/* <FlightSearch /> */}
+
+              {/* Flight Widget Results */}
+             
             </div>
           </div>
         </section>
+         <div className="mt-1">
+                <FlightWidget />
+              </div>
 
         {/* Features Section */}
         <section className="py-16 bg-secondary">
@@ -112,7 +119,7 @@ export default function HomePage() {
         </section>
 
         {/* Popular Routes Section */}
-        <section className="py-16">
+        {/* <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-8">
               <div>
@@ -140,7 +147,7 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Travel Deals Section */}
         <section className="py-16 bg-secondary">
