@@ -11,6 +11,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Trip In Hand - Find Cheap Flights & Travel Deals',
   description: 'Compare and book cheap flights to destinations worldwide. Find the best travel deals, airline tickets, and vacation packages with Trip In Hand.',
+  keywords: 'cheap flights, flight deals, airline tickets, travel deals, book flights online, flight comparison, travel packages, vacation deals, international flights, domestic flights, airline bookings',
   generator: 'v0.app',
   icons: {
     icon: [
