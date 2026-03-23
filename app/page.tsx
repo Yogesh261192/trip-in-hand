@@ -3,9 +3,6 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FlightSearch } from "@/components/flight-search";
 import { FlightWidget } from "@/components/flight-widget";
-import { RouteCard } from "@/components/route-card";
-import { DealCard } from "@/components/deal-card";
-import { popularRoutes, travelDeals } from "@/lib/mock-data";
 import { Plane, Shield, Clock, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -149,34 +146,18 @@ export default function HomePage() {
           </div>
         </section> */}
 
-        {/* Travel Deals Section */}
+        {/* Deals page CTA */}
         <section className="py-16 bg-secondary">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between mb-8">
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-                  Travel Deals
-                </h2>
-                <p className="text-muted-foreground mt-1">
-                  Exclusive discounts on popular destinations
-                </p>
-              </div>
-              <Button variant="outline" asChild className="hidden sm:flex">
-                <Link href="/deals">View All Deals</Link>
-              </Button>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {travelDeals.map((deal) => (
-                <DealCard key={deal.id} deal={deal} />
-              ))}
-            </div>
-
-            <div className="mt-6 sm:hidden">
-              <Button variant="outline" className="w-full" asChild>
-                <Link href="/deals">View All Deals</Link>
-              </Button>
-            </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
+              Find the Best Travel Deals
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              All live deals have moved to the Deals page. Tap below to explore today's top destinations.
+            </p>
+            <Button size="lg" asChild>
+              <Link href="/deals">Go To Deals</Link>
+            </Button>
           </div>
         </section>
 
