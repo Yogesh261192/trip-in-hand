@@ -174,19 +174,11 @@ export default function HomePage() {
                   travel tips straight to your inbox.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button
-                    size="lg"
-                    variant="secondary"
-                    className="font-semibold"
-                  >
-                    Get Started Free
+                  <Button size="lg" variant="secondary" className="font-semibold" asChild>
+                    <Link href="/deals">Get Started Free</Link>
                   </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-transparent text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10 hover:text-primary-foreground"
-                  >
-                    Learn More
+                  <Button size="lg" variant="outline" asChild className="bg-transparent text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                    <Link href="/about">Learn More</Link>
                   </Button>
                 </div>
               </div>
