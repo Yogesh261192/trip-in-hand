@@ -12,7 +12,7 @@ export function Header() {
     { href: "/", label: "Flights" },
     { href: "/deals", label: "Deals" },
     { href: "/destinations", label: "Destinations" },
-    { href: "/blog", label: "Blog" },
+    { href: "/blog", label: "Blogs" },
   ];
 
   return (
