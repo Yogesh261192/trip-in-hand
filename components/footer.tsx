@@ -21,28 +21,36 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex gap-4">
               <Link
-                href="#"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-background/70 hover:text-background transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-background/70 hover:text-background transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-background/70 hover:text-background transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-background/70 hover:text-background transition-colors"
                 aria-label="Youtube"
               >
