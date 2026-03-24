@@ -4,6 +4,10 @@ import { DealCard } from "@/components/deal-card";
 import { travelDeals } from "@/lib/mock-data";
 
 export default function DealsPage() {
+  const uniqueDeals = Array.from(
+    new Map(travelDeals.map((deal) => [deal.destination.toLowerCase(), deal])).values()
+  );
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -18,7 +22,7 @@ export default function DealsPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {travelDeals.map((deal) => (
+            {uniqueDeals.map((deal) => (
               <DealCard key={deal.id} deal={deal} />
             ))}
           </div>

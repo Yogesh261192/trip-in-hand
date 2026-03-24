@@ -81,12 +81,12 @@ export const locations: Location[] = [
     name: "Agra, India",
     shortDescription: "Home to the iconic Taj Mahal and Mughal architecture",
     fullDescription: "Agra, located in Uttar Pradesh, is world-famous for the Taj Mahal, one of the Seven Wonders of the World. Built by Mughal Emperor Shah Jahan as a symbol of love for his wife Mumtaz Mahal, this white marble mausoleum is a masterpiece of Mughal architecture. Explore the Agra Fort, Fatehpur Sikri, and experience the rich Mughal history that shaped India's architectural heritage.",
-    heroImage: "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=1200&h=600&fit=crop",
+    heroImage: "/hero-image-agra.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1544008230-ac1e1fb4f4f4?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1596178060810-fb4bd482ee2c?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=600&h=400&fit=crop"
+      "/agra1.jpg",
+      "/agra2.jpg",
+      "/agra3.jpg",
+      "/agra4.jpg"
     ],
     bestTimeToVisit: "October to March",
     rating: 4.7,
@@ -101,12 +101,12 @@ export const locations: Location[] = [
     name: "Varanasi, India",
     shortDescription: "Spiritual capital of India with ancient ghats and temples",
     fullDescription: "Varanasi, one of the world's oldest living cities, is the spiritual capital of India and a major pilgrimage destination for Hindus. Located on the banks of the sacred River Ganges, the city is famous for its ghats, temples, and the evening Ganga Aarti ceremony. Experience the spiritual atmosphere, explore ancient temples, and witness the unique blend of devotion and daily life that makes Varanasi truly special.",
-    heroImage: "https://images.unsplash.com/photo-1596178060810-fb4bd482ee2c?w=1200&h=600&fit=crop",
+    heroImage: "/varanasi-hero-image.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1544008230-ac1e1fb4f4f4?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1596178060810-fb4bd482ee2c?w=600&h=400&fit=crop"
+      "/varanasi1.jpg",
+      "/varanasi2.jpg",
+      "/varanasi3.jpg",
+      "/varanasi4.jpg"
     ],
     bestTimeToVisit: "October to March",
     rating: 4.3,
@@ -117,21 +117,21 @@ export const locations: Location[] = [
     category: "indian"
   },
   {
-    id: "jaipur",
-    name: "Jaipur, India",
-    shortDescription: "The Pink City with magnificent palaces and markets",
-    fullDescription: "Jaipur, the capital of Rajasthan, is famously known as the 'Pink City' due to the distinctive color of its buildings. Founded in 1727 by Maharaja Sawai Jai Singh II, the city is a UNESCO World Heritage Site featuring magnificent palaces, forts, and vibrant markets. Explore the City Palace, Hawa Mahal, and Amber Fort, and experience the royal heritage of Rajasthan.",
-    heroImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=600&fit=crop",
+    id: "rishikesh",
+    name: "Rishikesh, India",
+    shortDescription: "Yoga capital of the world with adventure sports and spirituality",
+    fullDescription: "Rishikesh, often called the 'Yoga Capital of the World', is a spiritual destination nestled in the foothills of the Himalayas along the sacred Ganges River. Known for its ashrams, temples, and adventure activities, Rishikesh offers a perfect blend of spiritual awakening and thrilling experiences. Practice yoga at ancient ashrams, go river rafting on the Ganges, explore waterfalls, and experience the peaceful Himalayan atmosphere that inspired The Beatles during their 1968 visit.",
+    heroImage: "/rishikesh-hero.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1544008230-ac1e1fb4f4f4?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1596178060810-fb4bd482ee2c?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop"
+      "/rishikesh1.jpg",
+      "/rishikesh2.jpg",
+      "/rishikesh3.jpg",
+      "/rishikesh4.jpg"
     ],
-    bestTimeToVisit: "October to March",
-    rating: 4.4,
-    priceLevel: "$$",
-    highlights: ["Palaces", "Forts", "Markets", "Royal Heritage"],
+    bestTimeToVisit: "March to June, September to November",
+    rating: 4.5,
+    priceLevel: "$",
+    highlights: ["Yoga Ashrams", "River Rafting", "Himalayan Views", "Spiritual Retreats"],
     region: "Asia",
     country: "India",
     category: "indian"
@@ -228,7 +228,7 @@ export const locations: Location[] = [
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop"
+      "/thailand4.jpg"
     ],
     bestTimeToVisit: "November to February",
     rating: 4.5,
@@ -285,7 +285,7 @@ export const locations: Location[] = [
     fullDescription: "Rome, the Eternal City, is the capital of Italy and a living museum of ancient history and Renaissance art. Walk among the ruins of the Colosseum, throw a coin into the Trevi Fountain, and climb the steps of the Vatican. Experience world-famous Italian cuisine, vibrant piazzas, and the timeless beauty that has inspired artists for centuries.",
     heroImage: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&h=600&fit=crop",
     gallery: [
-      "https://images.unsplash.com/photo-1529260830199-42e834d57831?w=600&h=400&fit=crop",
+      "/rome1.jpg",
       "https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=600&h=400&fit=crop"
@@ -305,8 +305,8 @@ export const locations: Location[] = [
     fullDescription: "New York City, often called the 'City That Never Sleeps', is a global hub of culture, finance, and entertainment. From the towering skyscrapers of Manhattan to the diverse neighborhoods of Brooklyn and Queens, NYC offers endless possibilities. Visit the Statue of Liberty, Times Square, Central Park, and experience the energy that makes this city legendary.",
     heroImage: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=600&fit=crop",
     gallery: [
-      "https://images.unsplash.com/photo-1485871981521-5b1fd3805b6d?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1520637836862-4d197d17c1a8?w=600&h=400&fit=crop",
+      "/new1.jpg",
+      "/new2.jpg",
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&h=400&fit=crop"
     ],
@@ -326,7 +326,7 @@ export const locations: Location[] = [
     heroImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=600&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1520986606214-8b456906c813?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1513026705753-bc3fffca2485?w=600&h=400&fit=crop",
+      "/london2.jpg",
       "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1549144511-f099e773c147?w=600&h=400&fit=crop"
     ],

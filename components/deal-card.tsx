@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { locations } from "@/lib/locations";
 import type { Deal } from "@/lib/mock-data";
 
 interface DealCardProps {
@@ -16,6 +17,21 @@ export function DealCard({ deal }: DealCardProps) {
       maximumFractionDigits: 0,
     }).format(price);
   };
+
+  const destinationKey = deal.destination.trim().toLowerCase();
+  const locationMatch = locations.find((location) => {
+    const normalizedName = location.name.toLowerCase();
+    return (
+      location.id.toLowerCase() === destinationKey ||
+      normalizedName === destinationKey ||
+      normalizedName.startsWith(`${destinationKey},`) ||
+      normalizedName.includes(destinationKey)
+    );
+  });
+
+  const exploreHref = locationMatch
+    ? `/destinations/${locationMatch.id}`
+    : `/flights/delhi-to-${destinationKey.replace(/\s+/g, "-")}`;
 
   return (
     <div className="group relative overflow-hidden rounded-xl bg-card border border-border hover:shadow-lg transition-all">
@@ -44,7 +60,7 @@ export function DealCard({ deal }: DealCardProps) {
             </p>
           </div>
           <Button size="sm" variant="outline" asChild>
-            <Link href={`/flights?to=${deal.destination.toLowerCase()}`}>
+            <Link href={exploreHref}>
               Explore
             </Link>
           </Button>
