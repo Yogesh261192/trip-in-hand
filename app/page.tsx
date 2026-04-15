@@ -32,7 +32,7 @@ export default function HomePage() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-10">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-background mb-4 text-balance">
-                  Find Your Perfect Flight
+                  Find Your puneet Flight
                 </h1>
                 <p className="text-lg sm:text-xl text-background/90 max-w-2xl mx-auto text-pretty">
                   Compare prices from hundreds of airlines and book your next
